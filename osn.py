@@ -64,7 +64,7 @@ def close_db(error):
 
 @app.route("/")
 def index():
-    return render_template('qwerty.html', menu=dbase.getMenu(), posts=dbase.getPostsAnonce())
+    return render_template('index.html', menu=dbase.getMenu(), posts=dbase.getPostsAnonce())
 
 @app.route("/inf")
 def inf():
